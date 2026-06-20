@@ -32,9 +32,9 @@ The Logistic Regression model achieved an accuracy of 79%, meaning that the mode
 
 The model performance by class is:
 
-Class	Precision	Recall
-Dissatisfied	0.80	0.82
-Satisfied	0.78	0.76
+Class	       Precision	Recall
+Dissatisfied	0.80	    0.82
+Satisfied	    0.78	    0.76
 Interpretation
 Precision measures how many predicted passengers in a class actually belong to that class.
 Recall measures how many actual passengers in a class were correctly identified by the model.
