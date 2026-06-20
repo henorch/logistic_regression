@@ -26,6 +26,51 @@ logistic_reg.ipynb
 Execute all cells.
 
 # model Interpretation
-at accuracy score of 79%, the model is able to predict 79 out of every 100 passenger, 0.80 precision and 0.82 Recall for our dissatisfied customer and 0.78 Precision and 0.76 recall for our satisfied customers, this shows the True positive and False Negative accuracy of the model
+Model Performance
 
-The coefficient of the model shows that Seat comfort, Inflight entertainment, and Ease of Online Booking are major contributor to customer satisfaction, while holding other variables constant. Seat number can increase satisfaction by 4.63, Inflight entertainment can increase it by 7.23 and Ease of online booking can increase satisfaction by 4.11
+The Logistic Regression model achieved an accuracy of 79%, meaning that the model correctly classified approximately 79 out of every 100 passengers as either satisfied or dissatisfied.
+
+The model performance by class is:
+
+Class	Precision	Recall
+Dissatisfied	0.80	0.82
+Satisfied	0.78	0.76
+Interpretation
+Precision measures how many predicted passengers in a class actually belong to that class.
+Recall measures how many actual passengers in a class were correctly identified by the model.
+
+The results indicate that the model performs slightly better at identifying dissatisfied customers than satisfied customers.
+
+Coefficient Interpretation (Corrected)
+
+The Logistic Regression coefficients indicate the direction and strength of influence of each feature on customer satisfaction while holding other variables constant.
+
+Positive coefficients increase the likelihood that a customer will be classified as satisfied.
+
+The analysis suggests that:
+
+Inflight Entertainment
+Seat Comfort
+Ease of Online Booking
+
+are among the strongest contributors to customer satisfaction.
+
+Important: A coefficient value does not mean customer satisfaction increases by that exact amount.
+
+For example:
+
+If the coefficients are:
+
+Feature	Coefficient
+Inflight Entertainment	7.23
+Seat Comfort	4.63
+Ease of Online Booking	4.11
+
+This means:
+
+A one-unit increase in Inflight Entertainment increases the log-odds of customer satisfaction by 7.23.
+A one-unit increase in Seat Comfort increases the log-odds of customer satisfaction by 4.63.
+A one-unit increase in Ease of Online Booking increases the log-odds of customer satisfaction by 4.11.
+
+These variables have the strongest positive influence on predicting customer satisfaction.
+
